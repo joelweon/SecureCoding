@@ -1,0 +1,19 @@
+﻿#패스워드 정책 RegEX
+((?=.*[0-9])(?=.*[a-zA-Z])(?=.*[~!@#$%^&*()_+]).{8,12})
+
+
+#이메일 주소 정책 RegEX
+a@a.com
+a@a.co.kr
+
+.+@.+  @만체크, 뭐든 1개이상
+.+@([^.]+\.){2}[a-zA-Z]{2.3}
+
+
+#XSS 필터링 RegEX
+
+<script>alert("test");</script>
+
+<script>.*</script>
+javascript:
+
